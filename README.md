@@ -8,6 +8,11 @@
 
 A desktop and mobile controller for Bluetooth Low Energy (BLE) smart lamps, featuring a reverse-engineered GATT communication protocol for German Supra / Eboylight smart bulbs (RGB + CCT dual-white).
 
+
+<p align="center">
+  <img src="media/ble-smart-light.jpg" width="800" alt="BLE Smart Light Hardware Controller" />
+</p>
+
 ---
 
 > [!WARNING]
