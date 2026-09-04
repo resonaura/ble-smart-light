@@ -1,0 +1,49 @@
+﻿<Page
+    x:Class="BLELight.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:BLELight"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+   
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    
+    <Grid>
+        <StackPanel Width="500" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid HorizontalAlignment="Stretch">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="40px"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <ComboBox SelectionChanged="DevicesList_SelectionChanged" Height="40px" HorizontalAlignment="Stretch" Grid.Column="0" Name="DevicesList" PlaceholderText="Выберите устройство"></ComboBox>
+                    <Button IsEnabled="False" Name="ScanButton" Width="40px" Height="40px" Grid.Column="1" Click="Button_Click">
+                        <FontIcon FontFamily="Segoe MDL2 Assets" FontSize="18" Glyph="&#xE72C;"></FontIcon>
+                    </Button>
+                </Grid>
+                <Grid Grid.Row="1" Margin="0,20,0,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition Width="50px"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock HorizontalAlignment="Left" VerticalAlignment="Center">Теплый свет</TextBlock>
+                    <Slider IsEnabled="False" x:Name="WarmSlider" PointerCaptureLost="WarmSlider_PointerCaptureLost" Minimum="0" Maximum="255" ValueChanged="Slider_ValueChanged"  Grid.Column="1"></Slider>
+                    <TextBlock Name="WarmSliderText" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="2">0</TextBlock>
+                </Grid>
+                <Grid Grid.Row="2" Margin="0, 20, 0, 0">
+                    <ColorPicker IsEnabled="False" IsColorChannelTextInputVisible="False" IsHexInputVisible="False" ColorSpectrumShape="Ring" Name="Colorpicker" PointerCaptureLost="Colorpicker_PointerCaptureLost"  ColorChanged="ColorPicker_ColorChanged"></ColorPicker>
+                </Grid>
+            </Grid>
+            
+        </StackPanel>
+        
+        
+    </Grid>
+</Page>
