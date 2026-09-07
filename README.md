@@ -6,13 +6,14 @@
 [![Protocol](https://img.shields.io/badge/Protocol-Bluetooth%20LE%20GATT-0082FC.svg?logo=bluetooth&logoColor=white)](#-reverse-engineered-ble-protocol)
 [![Status](https://img.shields.io/badge/Status-Historical%20Archive%20(2020)-yellow.svg)](#disclaimer--legacy-notice)
 
+[![Sponsor on GitHub](https://img.shields.io/badge/Sponsor%20on%20GitHub-EA4AAA?logo=github-sponsors&logoColor=white)](https://github.com/sponsors/resonaura)
 [![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-FFDD00?logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/resonaura)
 
 A desktop and mobile controller for Bluetooth Low Energy (BLE) smart lamps, featuring a reverse-engineered GATT communication protocol for German Supra / Eboylight smart bulbs (RGB + CCT dual-white).
 
 
 <p align="center">
-  <img src="media/ble-smart-light.jpg" width="800" alt="BLE Smart Light Hardware Controller" />
+  <img src="https://raw.githubusercontent.com/resonaura/ble-smart-light/main/media/ble-smart-light.jpg" width="800" alt="BLE Smart Light Hardware Controller" />
 </p>
 
 ---
